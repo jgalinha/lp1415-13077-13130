@@ -25,3 +25,5 @@ print type(range(0,10))
 print type(xrange(0,10))
 print type(a > 10 if 10 else 2)
 print type(a) ==  type("string") if "uma string" else "não sei"
+
+print type((3+3j)+2.3)
