@@ -40,6 +40,6 @@ class Excel:
         for row in range(1, sheet.nrows):
             lst = []
             for col in range(1, sheet.ncols):
-                lst.append(sheet.cell(row+1, col+1))
+                lst.append(sheet.cell(row, col))
             Excel.lista2.append(lst)
 
