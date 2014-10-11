@@ -40,6 +40,10 @@ class Excel:
         for row in range(1, sheet.nrows):
             lst = []
             for col in range(1, sheet.ncols):
-                lst.append(sheet.cell(row, col))
+                value = sheet.cell(row, col).value
+                if value != '':
+                    lst.append(value)
+                else:
+                    lst.append('null')  # não sei se é mesmo assim que se marcam os nulls
             Excel.lista2.append(lst)
 
