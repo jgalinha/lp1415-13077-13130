@@ -6,7 +6,7 @@
 from excel import Excel
 from db import Database
 
-#x = Excel("../Data/IPC_Portugal_1977_2013.xls")
+# x = Excel("../Data/IPC_Portugal_1977_2013.xls")
 x = Excel("C:/Users/Diogo/Dropbox/ESTIG/2/S1/LP/LP-1415/IPC_Portugal_1977_2013.xls")
 #x.readFile()
 #lista = x.lista
@@ -21,4 +21,3 @@ d.create_table()
 d.insert_data()
 
 d.test()
-
