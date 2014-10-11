@@ -11,6 +11,7 @@ class Excel:
     excelFileLoc = ""
     workBook = ""
     lista = [[[]]]
+    lista2 = []
 
     def __init__(self, excelfilelocation):
         Excel.excelFileLoc = excelfilelocation
@@ -30,3 +31,15 @@ class Excel:
                         Excel.lista[x][y].append(s.cell(row, col).value)
                     y += 1
             x += 1
+
+
+    def readData(self):
+        Excel.workBook = open_workbook(Excel.excelFileLoc)
+        sheet = Excel.workBook.sheet_by_index(0)
+
+        for row in range(1, sheet.nrows):
+            lst = []
+            for col in range(1, sheet.ncols):
+                lst.append(sheet.cell(row+1, col+1))
+            Excel.lista2.append(lst)
+
