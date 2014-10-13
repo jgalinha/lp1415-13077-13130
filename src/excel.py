@@ -32,8 +32,7 @@ class Excel:
                     y += 1
             x += 1
 
-
-    def readData(self):
+    def read_data(self):
         Excel.workBook = open_workbook(Excel.excelFileLoc)
         sheet = Excel.workBook.sheet_by_index(0)
 

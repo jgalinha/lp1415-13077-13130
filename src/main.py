@@ -11,7 +11,7 @@ x = Excel("C:/Users/Diogo/Dropbox/ESTIG/2/S1/LP/LP-1415/IPC_Portugal_1977_2013.x
 #x.readFile()
 #lista = x.lista
 
-x.readData()
+x.read_data()
 lista2 = x.lista2
 
 d = Database(lista2)
